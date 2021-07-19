@@ -24,7 +24,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Deploy in Tomcat
-      run: mvn -s $GITHUB_WORKSPACE/.github/workflows/maven-settings.xml tomcat7:redeploy
+      run: mvn tomcat7:redeploy
       env:
         USER_NAME: ${{ secrets.USER_NAME }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
