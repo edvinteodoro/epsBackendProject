@@ -47,8 +47,14 @@
                             <artifactId>tomcat7-maven-plugin</artifactId>
                             <version>2.2</version>
                             <configuration>
+<!--                                Descomentar para pruebas locales-->
+<!--                                <url>http://localhost:8080/manager/text</url>-->
+<!--                                Descomentar para pruebas en AWS-->
                                 <url>http://18.116.200.191:8080/manager/text</url>
                                 <server>TomcatServer</server>
+<!--                                Descomentar para pruebas en AWS-->
+                                <username>${env.USER_NAME}</username>
+                                <password>${env.ACCESS_TOKEN}</password>
                                 <path>/epsBackend</path>
                             </configuration>
                         </plugin>
