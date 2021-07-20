@@ -17,7 +17,7 @@ public class HelloWorldController {
     
     @RequestMapping("/")
     public String hello() {
-        return "Hello World EPS!!";
+        return "Hola Mundo desde Tomcat!!";
     }
     
 }
