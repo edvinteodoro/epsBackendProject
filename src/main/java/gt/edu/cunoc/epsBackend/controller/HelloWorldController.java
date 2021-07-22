@@ -17,7 +17,7 @@ public class HelloWorldController {
     
     @RequestMapping("/")
     public String hello() {
-        return "Hola Mundo desde Tomcat 2!!";
+        return "Hola Mundo validando Cache!!";
     }
     
 }
